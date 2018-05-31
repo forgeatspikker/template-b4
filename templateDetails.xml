@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="template" client="site" method="upgrade">
+
+	<name>GBU Template</name>
+	<creationDate>2018</creationDate>
+	<author>Douwe Pausma</author>
+	<authorEmail>dpausma@gbu.nl</authorEmail>
+	<authorUrl>http://www.gbu.nl</authorUrl>
+	<copyright>Copyright (C) 2018 GBU media</copyright>
+	<version>1.0</version>
+	<description>Joomla! Bootstrap 4 template door GBU media</description>
+
+	<files>
+		<folder>assets</folder>
+		<folder>dist</folder>
+		<folder>html</folder>
+		<filename>index.php</filename>
+		<filename>package.json</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>webpack.dev.js</filename>
+		<filename>webpack.prod.js</filename>
+		<filename>README.md</filename>
+	</files>
+
+</extension>
