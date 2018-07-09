@@ -9,16 +9,12 @@ import AOS from 'aos';
 import $ from 'jquery';
 
 // FontAwesome
-import fontawesome from '@fortawesome/fontawesome';
-import solid from '@fortawesome/fontawesome-free-solid';
-import regular from '@fortawesome/fontawesome-free-regular';
-import brands from '@fortawesome/fontawesome-free-brands';
+import { library, dom } from '@fortawesome/fontawesome-svg-core'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
+library.add(faBars)
 
-// Add the icon to the library so you can use it in your page
-fontawesome.library.add(solid);
-fontawesome.library.add(regular);
-fontawesome.library.add(brands);
+dom.watch()
 
 // Custom Javascript
 import './js/app.js';
