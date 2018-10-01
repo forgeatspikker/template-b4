@@ -10,13 +10,26 @@ import $ from 'jquery';
 
 // FontAwesome
 import { library, dom } from '@fortawesome/fontawesome-svg-core'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars } from '@fortawesome/free-solid-svg-icons/faBars'
+import { faPhone } from '@fortawesome/free-solid-svg-icons/faPhone'
+import { faInfo } from '@fortawesome/free-solid-svg-icons/faInfo'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons/faChevronRight'
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons/faChevronLeft'
+import { faphone } from '@fortawesome/free-solid-svg-icons/faPhone'
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons/faMapMarkerAlt'
+import { faDownload } from '@fortawesome/free-solid-svg-icons/faDownload'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter'
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons/faFacebookF'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram'
+import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons/faCalendarAlt'
 
-library.add(faBars)
+library.add(faBars, faBars, faPhone, faInfo, faChevronRight, faChevronLeft, faphone, faMapMarkerAlt, faDownload, faEnvelope, faTwitter, faFacebookF, faInstagram, faCalendarAlt)
 
 dom.watch()
 
 // Custom Javascript
+import './js/smoothscroll.js';
 import './js/app.js';
 
 // STYLESHEETS

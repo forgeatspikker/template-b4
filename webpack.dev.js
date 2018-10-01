@@ -1,5 +1,5 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var BrowserSyncPlugin = require('browser-sync-webpack-plugin')
+// var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const webpack = require("webpack");
 const path = require('path');
 
@@ -70,10 +70,10 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin({filename: '/css/master.css'}),
-    new BrowserSyncPlugin({
-      host: 'localhost',
-      port: 3000,
-      proxy: 'http://localhost/modeteam/'
-    })
+    // new BrowserSyncPlugin({
+    //   host: 'localhost',
+    //   port: 3000,
+    //   proxy: 'http://localhost:3000/'
+    // })
   ],
 }

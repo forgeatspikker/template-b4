@@ -44,5 +44,6 @@ $lang = explode("-", $lang->getTag())[0];
 <!--     <script>
         AOS.init();
     </script> -->
+
   </body>
 </html>
