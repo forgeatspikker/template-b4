@@ -1,1 +1,31 @@
+.scroll-to-top {
+	color: #fff;
+	background-color: $brand-primary;
+	opacity: 0.7;
+	display: inline-block;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	transition: 300ms ease-in-out;
+	cursor: pointer;
+	pointer-events: auto;
+	z-index: 10000000;
 
+	a {
+		text-align: center;
+		width: 100%;
+		height: auto;
+		display: block;
+		width: 40px;
+		height: 40px;
+		padding-top: 3px;
+		font-size: 23px;
+		color: #fff;
+	}
+
+	&:hover,
+	&:active,
+	&:focus {
+		opacity: 1;
+	};
+}
