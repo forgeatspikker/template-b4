@@ -23,7 +23,7 @@ import { faFacebookF } from '@fortawesome/free-brands-svg-icons/faFacebookF'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram'
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons/faCalendarAlt'
 
-library.add(faBars, faBars, faPhone, faInfo, faChevronRight, faChevronLeft, faMapMarkerAlt, faDownload, faEnvelope, faTwitter, faFacebookF, faInstagram, faCalendarAlt)
+library.add(faBars, faPhone, faInfo, faChevronRight, faChevronLeft, faMapMarkerAlt, faDownload, faEnvelope, faTwitter, faFacebookF, faInstagram, faCalendarAlt)
 
 dom.watch()
 
