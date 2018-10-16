@@ -24,10 +24,10 @@ else { $linktype = $item->title;
 
 
 if ( preg_match( '/dropdown/', $params->get( 'moduleclass_sfx' ) ) ) {
-  echo '<a class="dropdown-toggle separator" data-toggle="dropdown" href="#">' . $title . $linktype . '<b class="caret"></b></a>';
+  echo '<a class="nav-link dropdown-toggle separator" data-toggle="dropdown" href="#">' . $title . $linktype . '<b class="caret"></b></a>';
 } elseif ( $item->title == 'divider' ) {
   echo 'test';
 } else {
-  echo '<a class="dropdown-toggle" data-toggle="dropdown" href="#">' . $title . $linktype . '<b class="caret"></b></a>';
+  echo '<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">' . $title . $linktype . '<b class="caret"></b></a>';
 }
 ?>

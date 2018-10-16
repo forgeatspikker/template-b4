@@ -28,9 +28,6 @@ $lang = explode("-", $lang->getTag())[0];
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="<?= $path ?>/dist/js/bundle.js"></script>
-<!--     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"> -->
     <jdoc:include type="head" />
     <link href="<?= $path ?>/dist/css/master.css" rel="stylesheet">
     <link href="<?= $path ?>/dist/images/favicon.png" rel="shortcut icon">
@@ -40,10 +37,17 @@ $lang = explode("-", $lang->getTag())[0];
     <![endif]-->
   </head>
   <body>
-    <h1>Hello, world!</h1>
-<!--     <script>
-        AOS.init();
-    </script> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <jdoc:include type="modules" name="main-menu" style="xhtml" />
+      </div>
+    </nav>
 
+    <h1 data-aos="fade-up">Hello, world!</h1>
+    <script type="text/javascript" src="<?= $path ?>/dist/js/bundle.js"></script>
   </body>
 </html>

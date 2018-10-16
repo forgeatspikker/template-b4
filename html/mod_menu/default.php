@@ -16,7 +16,7 @@ if ( preg_match( '/dropdown/', $params->get( 'moduleclass_sfx' ) ) ) {
 	$dropdown = " dropdown";
 }
 ?>
-<ul class="nav<?php if ($class_sfx) { echo $class_sfx; } ;?>"<?php
+<ul class="navbar-nav<?php if ($class_sfx) { echo $class_sfx; } ;?>"<?php
 	$tag = '';
 	if ($params->get('tag_id')!=NULL) {
 		$tag = $params->get('tag_id').'';
