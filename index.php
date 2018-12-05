@@ -48,6 +48,7 @@ $lang = explode("-", $lang->getTag())[0];
     </nav>
 
     <h1 data-aos="fade-up">Hello, world!</h1>
+    <button class="btn btn-primary" onclick="toastr.info('Toastr werkt!!!');">Toastr Test</button>
 
     <div class="scroll-to-top" data-spy="affix" data-offset-top="200"><a href="#page" class="smooth-scroll"><i class="fa fa-angle-up"></i></a></div>
     <script type="text/javascript" src="<?= $path ?>/dist/js/bundle.js"></script>

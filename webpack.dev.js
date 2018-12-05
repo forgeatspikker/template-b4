@@ -26,6 +26,13 @@ module.exports = {
          }]
       },
       {
+          test: require.resolve('toastr'),
+          use: {
+             loader: 'expose-loader',
+             options: 'toastr'
+          }
+      },
+      {
         test: /\.(s*)css$/,
         use: ExtractTextPlugin.extract({
           fallback:'style-loader',

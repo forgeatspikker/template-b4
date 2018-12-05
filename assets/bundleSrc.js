@@ -5,8 +5,12 @@ import 'bootstrap';
 // AOS
 import AOS from 'aos';
 AOS.init();
+
 // jQuery
 import $ from 'jquery';
+
+// toastr
+import toastr from 'toastr';
 
 // FontAwesome
 import { library, dom } from '@fortawesome/fontawesome-svg-core'
