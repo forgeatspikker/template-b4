@@ -1,0 +1,20 @@
+#toast-container {
+
+	& > .toast {
+		background-size: 20px 20px;
+	}
+
+	& > .toast-info {
+		background-image: url('../images/info-solid.svg') !important;
+	}
+	& > .toast-success {
+		background-image: url('../images/check-solid.svg') !important;
+	}
+	& > .toast-warning {
+		background-image: url('../images/exclamation-triangle-solid.svg') !important;
+	}
+	& > .toast-error {
+		background-image: url('../images/times-solid.svg') !important;
+	}
+	
+}

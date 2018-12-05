@@ -39,6 +39,6 @@
     "development": "webpack --config webpack.dev.js",
     "production": "webpack --config webpack.prod.js"
   },
-  "author": "",
+  "author": "Douwe Pausma",
   "license": "ISC"
 }
