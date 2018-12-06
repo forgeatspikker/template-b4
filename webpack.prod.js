@@ -1,13 +1,29 @@
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const webpack = require("webpack");
 const path = require('path');
 
 module.exports = {
+  mode: 'production',
   context: __dirname,
   entry: {
     "bundle": "./assets/bundleSrc.js",
   },
   devtool: "source-map",
+  performance: {
+    hints: false
+  },
+  optimization: {
+    minimizer: [
+      new TerserPlugin({
+        cache: true,
+        include: /\.js$/,
+        sourceMap: true
+      }),
+      new OptimizeCSSAssetsPlugin({})
+    ]
+  },
   output: {
     path: __dirname + "/dist",
     filename: "js/[name].js",
@@ -43,30 +59,20 @@ module.exports = {
       },
       {
         test: /\.(s*)css$/,
-        use: ExtractTextPlugin.extract({
-          fallback:'style-loader',
-          use:[
-            {
-              loader: "css-loader",
-            },
-            {
-              loader: "postcss-loader",
-              options: {
-                plugins: function() {
-                  return [
-                    require('autoprefixer'),
-                    require('cssnano')({
-                      preset: 'default'
-                    })
-                  ]
-                }
-              }
-            },
-            {
-              loader: "sass-loader"
-            }
-          ]
-        }),
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          { 
+            loader: 'postcss-loader',
+            options: { 
+              ident: 'postcss',
+              plugins: [
+                require('autoprefixer')
+              ] 
+            } 
+          },
+          'sass-loader',
+        ],
       },
       {
         test: /\.(gif|png|jpe?g|svg)$/i,
@@ -88,10 +94,8 @@ module.exports = {
     ]
   },
   plugins: [
-      new ExtractTextPlugin({filename: '/css/master.css'}),
-      new webpack.optimize.UglifyJsPlugin({
-        include: /\.js$/,
-        minimize: true
-      })
+    new MiniCssExtractPlugin({
+      filename: '/css/master.css'
+    }),
   ],
 }

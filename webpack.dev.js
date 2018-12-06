@@ -1,9 +1,12 @@
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-// var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const webpack = require("webpack");
 const path = require('path');
 
 module.exports = {
+  mode: 'development',
   context: __dirname,
   entry: {
     "bundle": "./assets/bundleSrc.js"
@@ -34,27 +37,11 @@ module.exports = {
       },
       {
         test: /\.(s*)css$/,
-        use: ExtractTextPlugin.extract({
-          fallback:'style-loader',
-          use:[
-            {
-              loader: "css-loader?url=false",
-            },
-            {
-              loader: "postcss-loader",
-              options: {
-                plugins: function() {
-                  return [
-                    require('autoprefixer'),
-                  ]
-                }
-              }
-            },
-            {
-              loader: "sass-loader"
-            }
-          ]
-        })
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader',
+        ],
       },
       {
         test: /\.(gif|png|jpe?g|svg)$/i,
@@ -76,11 +63,13 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin({filename: '/css/master.css'}),
-    // new BrowserSyncPlugin({
-    //   host: 'localhost',
-    //   port: 3000,
-    //   proxy: 'http://localhost:3000/'
-    // })
+    new MiniCssExtractPlugin({
+      filename: '/css/master.css'
+    }),
+    new BrowserSyncPlugin({
+      host: 'localhost',
+      port: 3000,
+      proxy: 'http://website.test/'
+    })
   ],
 }

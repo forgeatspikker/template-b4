@@ -1,6 +1,10 @@
+@import "variables.scss";
+
+// Packes
 @import "~bootstrap/scss/bootstrap";
 @import "~aos/dist/aos.css";
 @import "~toastr/toastr.scss";
-@import "variables.scss";
+
+// Our styles
 @import "main.scss";
 @import "toastr_custom.scss";
