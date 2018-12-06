@@ -2,19 +2,26 @@
 
 	& > .toast {
 		background-size: 20px 20px;
+		&:hover {
+			box-shadow: 0 0px 7px 0px #999;
+		}
 	}
 
 	& > .toast-info {
-		background-image: url('../images/info-solid.svg') !important;
+		background-color: $info;
+		background-image: url('/templates/#{$template-name}/dist/images/info-solid.svg') !important;
 	}
 	& > .toast-success {
-		background-image: url('../images/check-solid.svg') !important;
+		background-color: $success;
+		background-image: url('/templates/#{$template-name}/dist/images/check-solid.svg') !important;
 	}
 	& > .toast-warning {
-		background-image: url('../images/exclamation-triangle-solid.svg') !important;
+		background-color: $warning;
+		background-image: url('/templates/#{$template-name}/dist/images/exclamation-triangle-solid.svg') !important;
 	}
 	& > .toast-error {
-		background-image: url('../images/times-solid.svg') !important;
+		background-color: $danger;
+		background-image: url('/templates/#{$template-name}/dist/images/times-solid.svg') !important;
 	}
 	
 }

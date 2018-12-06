@@ -39,12 +39,12 @@ $lang = explode("-", $lang->getTag())[0];
   <body id="page">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#">Logo</a>
+        <a class="navbar-brand" href="/">Logo</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <jdoc:include type="modules" name="main-menu" style="xhtml" />
+          <jdoc:include type="modules" name="main-menu" />
         </div>
       </div>
     </nav>
@@ -52,7 +52,7 @@ $lang = explode("-", $lang->getTag())[0];
       <jdoc:include type="message" />
       <jdoc:include type="component" />
 
-      <h1 data-aos="fade-up">AOS works (refresh)</h1>
+      <h1 data-aos="fade-up">AOS Test (refresh)</h1>
 
       <button class="btn btn-danger" onclick="toastr.error('Toastr werkt!');">Toastr Error Test</button>
       <button class="btn btn-success" onclick="toastr.success('Toastr werkt!');">Toastr Succes Test</button>
