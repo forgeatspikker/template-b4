@@ -152,25 +152,25 @@ function pagination_item_active(&$item)
 	// Check for "Start" item
 	if ($item->text == JText::_('JLIB_HTML_START'))
 	{
-		$display = '<i class="fa fa-angle-double-left"></i>';
+		$display = '<i class="fas fa-angle-double-left"></i>';
 	}
 
 	// Check for "Prev" item
 	if ($item->text == JText::_('JPREV'))
 	{
-		$display = '<i class="fa fa-angle-left"></i>';
+		$display = '<i class="fas fa-angle-left"></i>';
 	}
 
 	// Check for "Next" item
 	if ($item->text == JText::_('JNEXT'))
 	{
-		$display = '<i class="fa fa-angle-right"></i>';
+		$display = '<i class="fas fa-angle-right"></i>';
 	}
 
 	// Check for "End" item
 	if ($item->text == JText::_('JLIB_HTML_END'))
 	{
-		$display = '<i class="fa fa-angle-double-right"></i>';
+		$display = '<i class="fas fa-angle-double-right"></i>';
 	}
 
 	// If the display object isn't set already, just render the item with its text
@@ -197,25 +197,25 @@ function pagination_item_inactive(&$item)
 	// Check for "Start" item
 	if ($item->text == JText::_('JLIB_HTML_START'))
 	{
-		return '<li class="disabled"><a><i class="fa fa-angle-double-left"></i></a></li>';
+		return '<li class="disabled"><a><i class="fas fa-angle-double-left"></i></a></li>';
 	}
 
 	// Check for "Prev" item
 	if ($item->text == JText::_('JPREV'))
 	{
-		return '<li class="disabled"><a><i class="fa fa-angle-left"></i></a></li>';
+		return '<li class="disabled"><a><i class="fas fa-angle-left"></i></a></li>';
 	}
 
 	// Check for "Next" item
 	if ($item->text == JText::_('JNEXT'))
 	{
-		return '<li class="disabled"><a><i class="fa fa-angle-right"></i></a></li>';
+		return '<li class="disabled"><a><i class="fas fa-angle-right"></i></a></li>';
 	}
 
 	// Check for "End" item
 	if ($item->text == JText::_('JLIB_HTML_END'))
 	{
-		return '<li class="disabled"><a><i class="fa fa-angle-double-right"></i></a></li>';
+		return '<li class="disabled"><a><i class="fas fa-angle-double-right"></i></a></li>';
 	}
 
 	// Check if the item is the active page

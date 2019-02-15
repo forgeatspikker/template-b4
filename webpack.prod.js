@@ -41,13 +41,6 @@ module.exports = {
          }]
       },
       {
-          test: require.resolve('toastr'),
-          use: {
-             loader: 'expose-loader',
-             options: 'toastr'
-          }
-      },
-      {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
         use: {

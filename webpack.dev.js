@@ -29,13 +29,6 @@ module.exports = {
          }]
       },
       {
-          test: require.resolve('toastr'),
-          use: {
-             loader: 'expose-loader',
-             options: 'toastr'
-          }
-      },
-      {
         test: /\.(s*)css$/,
         use: [
           MiniCssExtractPlugin.loader,
@@ -69,7 +62,7 @@ module.exports = {
     new BrowserSyncPlugin({
       host: 'localhost',
       port: 3000,
-      proxy: 'http://website.test/'
+      proxy: 'http://website.test/' // Add website dev url here
     })
   ],
 }

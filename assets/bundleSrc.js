@@ -9,16 +9,13 @@ AOS.init();
 // jQuery
 import $ from 'jquery';
 
-// toastr
-import toastr from 'toastr';
-
 // FontAwesome
 import { library, dom } from '@fortawesome/fontawesome-svg-core'
-import { faBars, faPhone, faInfo, faChevronRight, faChevronLeft, faAngleUp, faMapMarkerAlt, faDownload, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faPhone, faInfo, faChevronRight, faChevronLeft, faAngleUp, faAngleRight, faAngleDoubleRight, faAngleLeft, faAngleDoubleLeft, , faMapMarkerAlt, faDownload, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
 
-library.add(faBars, faPhone, faInfo, faChevronRight, faChevronLeft, faAngleUp, faMapMarkerAlt, faDownload, faEnvelope, faTwitter, faFacebookF, faInstagram, faCalendarAlt)
+library.add(faBars, faPhone, faInfo, faChevronRight, faChevronLeft, faAngleUp, faAngleRight, faAngleDoubleRight, faAngleLeft, faAngleDoubleLeft, , faMapMarkerAlt, faDownload, faEnvelope, faTwitter, faFacebookF, faInstagram, faCalendarAlt)
 
 dom.watch()
 
