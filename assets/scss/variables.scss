@@ -1,1 +1,14 @@
 $template-name: current-template-name;
+
+$bodytext: 'Source Sans Pro', sans-serif;
+$headertext: 'Montserrat', sans-serif;
+
+$primary: #0A2441;
+$light-primary: #305EAC;
+$secondary: #67BF9A;
+$gray: #ddd;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary
+);
