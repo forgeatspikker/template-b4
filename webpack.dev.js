@@ -62,7 +62,7 @@ module.exports = {
     new BrowserSyncPlugin({
       host: 'localhost',
       port: 3000,
-      proxy: 'http://vikingsalmon.test/' // Add website dev url here
+      proxy: 'http://website.test/' // Add website dev url here
     })
   ],
 }
