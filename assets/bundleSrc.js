@@ -10,14 +10,60 @@ AOS.init();
 import $ from 'jquery';
 
 // FontAwesome
-import { library, dom } from '@fortawesome/fontawesome-svg-core'
-import { faBars, faPhone, faInfo, faChevronRight, faChevronLeft, faAngleUp, faAngleRight, faAngleDoubleRight, faAngleLeft, faAngleDoubleLeft, faMapMarkerAlt, faExclamation, faCheck, faDownload, faSpinner, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faTwitter, faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons'
-import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
+import { library, dom } from '@fortawesome/fontawesome-svg-core';
+import { 
+	faBars,
+	faPhone,
+	faInfo,
+	faChevronRight,
+	faChevronLeft,
+	faAngleUp,
+	faAngleRight,
+	faAngleDoubleRight,
+	faAngleLeft,
+	faAngleDoubleLeft,
+	faMapMarkerAlt,
+	faExclamation,
+	faCheck,
+	faDownload,
+	faSpinner,
+	faEnvelope 
+} from '@fortawesome/free-solid-svg-icons'
 
-library.add(faBars, faPhone, faInfo, faChevronRight, faChevronLeft, faAngleUp, faAngleRight, faAngleDoubleRight, faAngleLeft, faAngleDoubleLeft, faMapMarkerAlt, faExclamation, faCheck, faDownload, faSpinner, faEnvelope, faTwitter, faFacebookF, faInstagram, faCalendarAlt)
+import { 
+	faTwitter,
+	faFacebookF,
+	faInstagram 
+} from '@fortawesome/free-brands-svg-icons'
 
-dom.watch()
+import { 
+	faCalendarAlt 
+} from '@fortawesome/free-regular-svg-icons'
+
+library.add(
+	faBars,
+	faPhone,
+	faInfo,
+	faChevronRight,
+	faChevronLeft,
+	faAngleUp,
+	faAngleRight,
+	faAngleDoubleRight,
+	faAngleLeft,
+	faAngleDoubleLeft,
+	faMapMarkerAlt,
+	faExclamation,
+	faCheck,
+	faDownload,
+	faSpinner,
+	faEnvelope,
+	faTwitter,
+	faFacebookF,
+	faInstagram,
+	faCalendarAlt
+);
+
+dom.watch();
 
 // Custom Javascript
 import './js/smoothscroll.js';
