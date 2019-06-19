@@ -23,7 +23,7 @@
     "babel-loader": "^7.1.5",
     "babel-plugin-transform-imports": "^1.5.1",
     "babel-preset-env": "^1.7.0",
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "^2.2.2",
     "css-loader": "^2.1.1",
     "expose-loader": "^0.7.5",
